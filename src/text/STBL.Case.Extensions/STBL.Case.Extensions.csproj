@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <OutputType>Library</OutputType>
+        <Authors>lowern1ght</Authors>
+        <PackageProjectUrl>stbl.com</PackageProjectUrl>
+        <PackageIcon>pl.case.extensions.png</PackageIcon>
+        <RepositoryUrl>https://github.com/dot-stbl/packages.extensions.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>case, extensions, dot, camel, kebab, train</PackageTags>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <NoWarn>$(NoWarn)</NoWarn>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <NeutralLanguage>en-001</NeutralLanguage>
+        <Version>1.0.0</Version>
+        <PackageId>STBL.Case.Extensions</PackageId>
+        <PackageReleaseNotes>add dot.case</PackageReleaseNotes>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <Description>Change any string case to PascalCase/camelCase/kebab-case/snake_case/Train-Case/dot.case</Description>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\..\..\contents\pl.case.extensions.png">
+          <Pack>True</Pack>
+          <PackagePath/>
+          <Link>pl.case.extensions.png</Link>
+        </None>
+        <None Include="README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+    
+</Project>

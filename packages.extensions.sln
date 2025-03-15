@@ -4,15 +4,43 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "repo", "repo", "{B4D872E2-6
 	ProjectSection(SolutionItems) = preProject
 		LICENSE = LICENSE
 		.gitignore = .gitignore
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{DD1B47C6-7FB7-4E8F-BDF7-28898571F2FA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1FF76F53-4E44-42B5-9CD1-B02AFD53304F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "serilog", "serilog", "{826FFA28-CE55-4861-9AE9-F773DE89D951}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "text", "text", "{E82F0B10-F8FB-4CEC-8D61-801AC4AB1110}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STBL.Case.Extensions", "src\text\STBL.Case.Extensions\STBL.Case.Extensions.csproj", "{687886DB-F2EE-40E0-AEA4-D4FBFC5CFA2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "text", "text", "{E23F2D57-933C-4C9D-BA28-C8DC17A8CD71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STBL.Case.Extensions.Unit", "tests\text\STBL.Case.Extensions.Unit\STBL.Case.Extensions.Unit.csproj", "{3D54D6F5-A2EE-4B07-8DAB-D542D7A9D606}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{826FFA28-CE55-4861-9AE9-F773DE89D951} = {1FF76F53-4E44-42B5-9CD1-B02AFD53304F}
+		{E82F0B10-F8FB-4CEC-8D61-801AC4AB1110} = {1FF76F53-4E44-42B5-9CD1-B02AFD53304F}
+		{687886DB-F2EE-40E0-AEA4-D4FBFC5CFA2E} = {E82F0B10-F8FB-4CEC-8D61-801AC4AB1110}
+		{E23F2D57-933C-4C9D-BA28-C8DC17A8CD71} = {DD1B47C6-7FB7-4E8F-BDF7-28898571F2FA}
+		{3D54D6F5-A2EE-4B07-8DAB-D542D7A9D606} = {E23F2D57-933C-4C9D-BA28-C8DC17A8CD71}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{687886DB-F2EE-40E0-AEA4-D4FBFC5CFA2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{687886DB-F2EE-40E0-AEA4-D4FBFC5CFA2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{687886DB-F2EE-40E0-AEA4-D4FBFC5CFA2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{687886DB-F2EE-40E0-AEA4-D4FBFC5CFA2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D54D6F5-A2EE-4B07-8DAB-D542D7A9D606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D54D6F5-A2EE-4B07-8DAB-D542D7A9D606}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D54D6F5-A2EE-4B07-8DAB-D542D7A9D606}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D54D6F5-A2EE-4B07-8DAB-D542D7A9D606}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
